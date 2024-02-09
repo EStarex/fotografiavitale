@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Cambio de tipo de letra */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffcc; /* Fondo amarillo */
+    color: #ff3300; /* Texto en rojo */
+    font-size: 20px; /* Tamaño de fuente más grande */
+}
+
+header {
+    background-color: #993300; /* Fondo marrón */
+    color: #fff;
+    padding: 40px; /* Aumenta el relleno */
+    text-align: center; /* Centrado del contenido */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 60px; /* Tamaño de fuente más grande para el título del encabezado */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #ffff99; /* Fondo amarillo claro */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordes más redondeados */
+}
+
+section h2 {
+    color: #ff3300; /* Títulos en rojo */
+    font-size: 36px; /* Tamaño de fuente más grande para títulos */
+    text-align: center; /* Centrado del contenido */
+}
+
+section p {
+    color: #cc6600; /* Texto en naranja más claro */
+    font-size: 18px; /* Tamaño de fuente más grande para párrafos */
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff3300; /* Texto en rojo */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px; /* Aumenta el relleno */
+    margin-bottom: 10px;
+    border: 2px solid #ff9900; /* Borde más grueso y en naranja */
+    border-radius: 8px; /* Bordes más redondeados */
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #993300; /* Fondo marrón oscuro */
+    color: #fff;
+    padding: 12px 24px; /* Aumenta el relleno */
+    border: none;
+    border-radius: 8px; /* Bordes más redondeados */
+    cursor: pointer;
+}
+
+/* Estilos específicos para pantallas más pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px; /* Ajusta el relleno para pantallas más pequeñas */
+    }
+
+    header h1 {
+        font-size: 28px; /* Tamaño de fuente más grande para el título del encabezado en pantallas más pequeñas */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: calc(100% - 20px);
+        padding: 10px; /* Aumenta el relleno */
+        margin-bottom: 10px;
+        border: 2px solid #ff9900; /* Borde más grueso y en naranja */
+        border-radius: 8px; /* Bordes más redondeados */
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 12px; /* Aumenta el relleno */
+        border-radius: 8px; /* Bordes más redondeados */
+        cursor: pointer;
+    }
+}
+
+/* Estilos específicos para "Nuestro Local" */
+.local {
+    background-color: #ffcc66; /* Fondo amarillo claro */
+    padding: 40px; /* Aumenta el relleno */
+    text-align: center;
+    margin-top: 40px; /* Aumenta el margen superior */
+}
+
+.local h3 {
+    font-size: 34px; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 30px; /* Aumenta el espacio inferior */
+    color: #ff3300; /* Título en rojo */
+}
+
+.local .video {
+    position: relative;
+    padding-bottom: 50%; /* Reducción de la relación de aspecto */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; /* Oculta los bordes negros */
+}
+
+.local .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+footer {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    width: calc(33.33% - 20px); /* Ajustar el ancho de cada imagen */
+    margin: 0 10px; /* Espacio entre las imágenes */
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    max-width: 100%; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5px;
+}
